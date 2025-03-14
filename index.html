@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css">
+    <title>Login - Persebaya Fans</title>
+    <style>
+        body {
+            background-color: #007A33;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .login-container {
+            background: white;-
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            width: 100%;
+            max-width: 350px;
+        }
+        .login-container h1 {
+            color: #007A33;
+            margin-bottom: 5px;
+        }
+        .login-container p {
+            color: #333;
+            font-size: 14px;
+        }
+        .pure-input-1 {
+            border-radius: 6px;
+            border: 1px solid #007A33;
+            padding: 10px;
+        }
+        .pure-button-primary {
+            background: #007A33;
+            border-radius: 6px;
+            color: white;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+            width: 100%;
+        }
+        .pure-button-primary:hover {
+            background: #005a24;
+        }
+        .social-login {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+        .social-login button {
+            width: 48%;
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .social-login .google {
+            background: #db4437;
+        }
+        .social-login .google:hover {
+            background: #c1351d;
+        }
+        .social-login .facebook {
+            background: #1877f2;
+        }
+        .social-login .facebook:hover {
+            background: #1461c5;
+        }
+        a {
+            color: #007A33;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>Welcome Bonek!</h1>
+        <h2>Gabung & Dukung Persebaya</h2>
+        <p>Buat akun untuk menjadi bagian dari komunitas Persebaya</p>
+        <form class="pure-form pure-form-stacked">
+            <fieldset>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Fauzan Gusmirawan" required class="pure-input-1">
+                
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="243307046" required class="pure-input-1">
+                
+                <label for="remember" class="pure-checkbox">
+                    <input type="checkbox" id="remember"> Ingat saya
+                </label>
+                
+                <button type="submit" class="pure-button pure-button-primary">Login</button>
+            </fieldset>
+        </form>
+        <p>Atau login dengan</p>
+        <div class="social-login">
+            <button class="google">Google</button>
+            <button class="facebook">Facebook</button>
+        </div>
+        <p>Belum punya akun? <a href="#">Daftar Sekarang</a></p>
+    </div>
+</body>
+</html>
+
+
